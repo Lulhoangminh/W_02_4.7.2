@@ -89,6 +89,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label_pointplayer1
             // 
@@ -147,6 +148,7 @@
             this.Controls.Add(this.playerName1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "roundForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "roundForm";
             this.Load += new System.EventHandler(this.roundForm_Load);
             this.ResumeLayout(false);

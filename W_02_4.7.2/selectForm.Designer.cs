@@ -102,7 +102,9 @@
             this.Controls.Add(this.titleForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "selectForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "selectForm";
+            this.Load += new System.EventHandler(this.selectForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -60,5 +60,14 @@ namespace W_02_4._7._2
                 vong = selected_team_name;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            selectForm form = new selectForm();
+            form.Closed += (s, args) => this.Show();
+            form.ShowDialog();
+
+        }
     }
 }
