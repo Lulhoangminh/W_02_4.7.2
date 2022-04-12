@@ -16,5 +16,13 @@ namespace W_02_4._7._2
         {
             InitializeComponent();
         }
+
+        private void button_start_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_InputTeam new_forminputteam = new Form_InputTeam();
+            new_forminputteam.Closed += (s, args) => this.Show();
+            new_forminputteam.ShowDialog();
+        }
     }
 }
