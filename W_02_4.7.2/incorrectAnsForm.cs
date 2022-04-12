@@ -16,5 +16,10 @@ namespace W_02_4._7._2
         {
             InitializeComponent();
         }
+
+        private void title_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

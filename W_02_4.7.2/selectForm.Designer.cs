@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.titleForm = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.levelComboBox = new System.Windows.Forms.ComboBox();
+            this.quesComboBox = new System.Windows.Forms.ComboBox();
+            this.levelButton = new System.Windows.Forms.Button();
+            this.quesButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // titleForm
@@ -48,57 +48,57 @@
             this.titleForm.TabIndex = 0;
             this.titleForm.Text = "Nhập Điểm";
             // 
-            // comboBox1
+            // levelComboBox
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(90, 208);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(314, 37);
-            this.comboBox1.TabIndex = 1;
+            this.levelComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.levelComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.levelComboBox.FormattingEnabled = true;
+            this.levelComboBox.Location = new System.Drawing.Point(90, 208);
+            this.levelComboBox.Name = "levelComboBox";
+            this.levelComboBox.Size = new System.Drawing.Size(314, 37);
+            this.levelComboBox.TabIndex = 1;
             // 
-            // comboBox2
+            // quesComboBox
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(90, 295);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(314, 37);
-            this.comboBox2.TabIndex = 2;
+            this.quesComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.quesComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quesComboBox.FormattingEnabled = true;
+            this.quesComboBox.Location = new System.Drawing.Point(90, 295);
+            this.quesComboBox.Name = "quesComboBox";
+            this.quesComboBox.Size = new System.Drawing.Size(314, 37);
+            this.quesComboBox.TabIndex = 2;
             // 
-            // button1
+            // levelButton
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(484, 208);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 37);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.levelButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.levelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.levelButton.Location = new System.Drawing.Point(458, 207);
+            this.levelButton.Name = "levelButton";
+            this.levelButton.Size = new System.Drawing.Size(186, 37);
+            this.levelButton.TabIndex = 3;
+            this.levelButton.Text = "chọn level";
+            this.levelButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // quesButton
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(484, 295);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 36);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.quesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.quesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quesButton.Location = new System.Drawing.Point(458, 294);
+            this.quesButton.Name = "quesButton";
+            this.quesButton.Size = new System.Drawing.Size(186, 36);
+            this.quesButton.TabIndex = 4;
+            this.quesButton.Text = "hiển thị câu hỏi";
+            this.quesButton.UseVisualStyleBackColor = true;
             // 
             // selectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 453);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.quesButton);
+            this.Controls.Add(this.levelButton);
+            this.Controls.Add(this.quesComboBox);
+            this.Controls.Add(this.levelComboBox);
             this.Controls.Add(this.titleForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "selectForm";
@@ -111,9 +111,9 @@
         #endregion
 
         private System.Windows.Forms.Label titleForm;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox levelComboBox;
+        private System.Windows.Forms.ComboBox quesComboBox;
+        private System.Windows.Forms.Button levelButton;
+        private System.Windows.Forms.Button quesButton;
     }
 }
