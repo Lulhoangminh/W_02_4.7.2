@@ -82,13 +82,16 @@ namespace W_02_4._7._2
         }
         public static string team1_name = "";
         public static string team2_name = "";
+        public static string team1_id = "";
+        public static string team2_id = "";
         private void comboBox_player1_SelectionChangeCommitted(object sender, EventArgs e)
         {
             if (comboBox_player1.SelectedIndex != null)
             {
                 string selected_team_id = comboBox_player1.SelectedValue.ToString();
                 string selected_team_name = comboBox_player1.GetItemText(comboBox_player1.SelectedItem);
-                team1_name = selected_team_id;
+                team1_name = selected_team_name;
+                team1_id = selected_team_id;
             }
         }
 
@@ -98,7 +101,8 @@ namespace W_02_4._7._2
             {
                 string selected_team_id = comboBox_player2.SelectedValue.ToString();
                 string selected_team_name = comboBox_player2.GetItemText(comboBox_player2.SelectedItem);
-                team2_name = selected_team_id;
+                team2_name = selected_team_name;
+                team2_id = selected_team_id;
             }
         }
 
@@ -108,6 +112,13 @@ namespace W_02_4._7._2
             {
                 string Error_dup = "Thông tin 2 người chơi không được phép trùng nhau hoặc bỏ trống";
                 MessageBox.Show(Error_dup, "Warning!", MessageBoxButtons.OK);
+            }
+            else
+            {
+                this.Hide();
+                roundForm new_roundform = new roundForm();
+                new_roundform.Closed += (s, args) => this.Show();
+                new_roundform.ShowDialog();
             }
         }
     }
