@@ -64,6 +64,7 @@
             this.comboBox_player1.Size = new System.Drawing.Size(285, 24);
             this.comboBox_player1.TabIndex = 2;
             this.comboBox_player1.DropDown += new System.EventHandler(this.comboBox_player1_DropDown);
+            this.comboBox_player1.SelectionChangeCommitted += new System.EventHandler(this.comboBox_player1_SelectionChangeCommitted);
             // 
             // comboBox_player2
             // 
@@ -73,6 +74,7 @@
             this.comboBox_player2.Size = new System.Drawing.Size(285, 24);
             this.comboBox_player2.TabIndex = 3;
             this.comboBox_player2.DropDown += new System.EventHandler(this.comboBox_player2_DropDown);
+            this.comboBox_player2.SelectionChangeCommitted += new System.EventHandler(this.comboBox_player2_SelectionChangeCommitted);
             // 
             // button1
             // 

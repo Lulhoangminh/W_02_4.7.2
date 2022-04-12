@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="answer1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="answer1Form.Designer.cs">
+      <DependentUpon>answer1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="answer2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="answer2Form.Designer.cs">
+      <DependentUpon>answer2Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRoundEnd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,13 +76,31 @@
     <Compile Include="Form_InputTeam.Designer.cs">
       <DependentUpon>Form_InputTeam.cs</DependentUpon>
     </Compile>
+    <Compile Include="incorrectAnsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="incorrectAnsForm.Designer.cs">
+      <DependentUpon>incorrectAnsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rightAnsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rightAnsForm.Designer.cs">
+      <DependentUpon>rightAnsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="roundForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="roundForm.Designer.cs">
       <DependentUpon>roundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectForm.Designer.cs">
+      <DependentUpon>selectForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form_Begin.resx">
       <DependentUpon>Form_Begin.cs</DependentUpon>

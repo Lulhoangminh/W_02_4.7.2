@@ -48,6 +48,7 @@ namespace W_02_4._7._2
             }
 
             sqlcnn.Close();
+            comboBox_player1.SelectedIndex = -1;
         }
 
         private void comboBox_player2_DropDown(object sender, EventArgs e)
@@ -65,13 +66,14 @@ namespace W_02_4._7._2
             if (data.Tables.Count > 0)
             {
                 //Dua du lieu vao combo box 
-                comboBox_player1.DataSource = data.Tables[0];
-                comboBox_player1.DisplayMember = "Name";
-                comboBox_player1.ValueMember = "TeamID";
+                comboBox_player2.DataSource = data.Tables[0];
+                comboBox_player2.DisplayMember = "Name";
+                comboBox_player2.ValueMember = "TeamID";
 
             }
 
             sqlcnn.Close();
+            comboBox_player2.SelectedIndex = -1;
         }
 
         private void button_Back_Click(object sender, EventArgs e)
@@ -79,6 +81,18 @@ namespace W_02_4._7._2
             this.Close();
         }
 
-        
+        private void comboBox_player1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (comboBox_player1.SelectedIndex != null)
+            {
+                string selected = comboBox_player1.SelectedValue.ToString();
+
+            }
+        }
+
+        private void comboBox_player2_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
     }
 }
